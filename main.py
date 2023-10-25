@@ -1,6 +1,29 @@
-# This is a sample Python script.
+x = 12
+y = 2
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+try:
+    print(x + "!")
+    print(x / y)
+    print("Linijka po")
+except TypeError:
+    print("Wpisz liczbę")
+except ZeroDivisionError:
+    print("Nastąpiło dzielenie przez 0!")
 
-at https://www.jetbrains.com/help/pycharm/
+print("Dalszy kod")
+
+try:
+    lista = [2]
+    print(lista[0])
+    print(x + 4)
+    print(x / y)
+    print("Linijka po")
+
+except (TypeError, ZeroDivisionError):
+    print("bład")
+except:
+    print("inny błąd")
+finally:
+    print("wykonam sie i tak")
+
+print("Dalszy kod")
